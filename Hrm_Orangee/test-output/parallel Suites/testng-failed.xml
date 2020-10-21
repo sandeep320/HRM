@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [parallel Suites]">
+  <test thread-count="5" parallel="tests" name="Test in GC(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="com.hrm.testscripts.HC001Test">
+        <methods>
+          <include name="tc001Test"/>
+        </methods>
+      </class> <!-- com.hrm.testscripts.HC001Test -->
+    </classes>
+  </test> <!-- Test in GC(failed) -->
+  <test thread-count="5" parallel="tests" name="Test in FF(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.hrm.testscripts.HC001Test">
+        <methods>
+          <include name="tc001Test"/>
+        </methods>
+      </class> <!-- com.hrm.testscripts.HC001Test -->
+    </classes>
+  </test> <!-- Test in FF(failed) -->
+</suite> <!-- Failed suite [parallel Suites] -->
